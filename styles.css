@@ -1,0 +1,80 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  
+  
+
+header {
+    background-color: #1f2937;
+    height: 120px;
+    display:flex;
+    justify-content: space-evenly;
+
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0 100px;
+}
+
+nav {
+    width: 70%;
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    
+    
+}   
+
+ul li a {
+    padding: 0 30px;
+    text-decoration: none;
+    color: #f9faf8;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+ul li a:hover {
+    color: #3882f6;
+}
+
+.logo h1 {
+    font-family: 'Gloria Hallelujah';
+    letter-spacing: 5px;
+    font-size: 52px;
+    color: #f9faf8;
+}
+

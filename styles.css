@@ -27,54 +27,252 @@
     isolation: isolate;
   }
 
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
   
+  header {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 180px;
+    background-color: #1f2937;
+
+  }
+
+  .logo {
+  display:flex;
+  align-items: center;
+  
+  }
+
+  .logo h1 {
+    font-family: 'Gloria Hallelujah';
+    color: #f9faf8;
+    letter-spacing: 10px;
+    font-size: 52px;
+  }
+
+  ul {
+    display: flex;
+    
+  }
+
   
 
-header {
+  ul li a {
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 60px;
+    position: relative;
+    left:70px;
+  
+  }
+
+  li a:hover {
+    color: #3882f6;
+  }
+
+
+
+  main {
     background-color: #1f2937;
-    height: 120px;
+    height: calc(75vh - 180px);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+  }
+
+  .content-left {
+    width: 30%;
+  }
+
+
+
+  .content-left h1 {
+    position: relative;
+    bottom: 80px;
+    font-family: 'Gloria Hallelujah';
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bolder;
+  }
+
+  .content-left h2 {
+    position: relative;
+    bottom: 40px;
+    color: #f9faf8;
+    font-size: 32px;
+  }
+
+  .content-left p {
+    position: relative;
+    bottom:20px;
+    color: #f9faf8;
+    font-size: 24;
+    line-height: 32px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .content-left .sign-up {
+    padding: 15px 25px;
+    border-radius: 8px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border:none;
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+
+  .content-left .sign-up:focus {
+    border:none;
+  }
+
+  .content-left .sign-up:hover {
+    background-color: #0c69ff;
+    cursor: pointer;
+
+  }
+
+  .content-right img {
+    border-radius: 50%;
+    position: relative;
+    bottom: 50px;
+  }
+
+
+
+  section {
+    background-color:#f9faf8;
+    height: 50vh;
     display:flex;
     justify-content: space-evenly;
-
-}
-
-header .logo {
-    display: flex;
     align-items: center;
-    margin-left: 0 100px;
-}
+    
+  }
 
-nav {
-    width: 70%;
-}
+  .info img {
+    border:5px solid transparent;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+  
+  }
 
-ul {
-    height: 100%;
+  .circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #3882f6;
+    margin-bottom: 20px;
+    background-image: url(./images/instant-pot-jambalaya.jpg); 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .circle2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #3882f6;
+    margin-bottom: 20px;
+    background-image: url(./images/Chicken-and-Sausage-Gumbo-8.jpg); 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .circle3 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #3882f6;
+    margin-bottom: 20px;
+    background-image: url(./images/istockphoto-1303924180-612x612.jpg); 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .circle4 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #3882f6;
+    margin-bottom: 20px;
+    background-image: url(./images/okra.jpg); 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .info {
     display: flex;
+    flex-direction: column;
     align-items: center;
+  }
+
+  .info p {
+    text-align: center;
+    max-width: 40ch;
+  }
+
+  .info:last-child {
+    position: relative;
+    bottom: 9px;
+  }
+
+
+  article {
+    height: 40vh;
+    background-color:#e5e7eb;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
-    list-style: none;
-    
-    
-}   
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
 
-ul li a {
-    padding: 0 30px;
-    text-decoration: none;
-    color: #f9faf8;
+  }
+
+  article q {
+    color:#1f2937;
+    font-size: 22px;
+    text-align: justify;
+    width: 40%;
+    font-style: italic;
+    line-height: 40px;
+   
+  }
+
+  article cite {
+    color: #1f2937;
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 18px;
+    margin-top: 20px;
+    position: relative;
+    left: 150px;
+    
+  }
 
-}
 
-ul li a:hover {
-    color: #3882f6;
-}
-
-.logo h1 {
-    font-family: 'Gloria Hallelujah';
-    letter-spacing: 5px;
-    font-size: 52px;
+  footer {
+    height: 10vh;
+    background-color: #1f2937;
     color: #f9faf8;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+  }
